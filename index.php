@@ -108,25 +108,25 @@
 
 							$create = new \Kendo\Data\DataSourceTransportCreate();
 
-							$create->url('indexGrid.php?type=create')
+							$create->url('index.php?type=create')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$read = new \Kendo\Data\DataSourceTransportRead();
 
-							$read->url('indexGrid.php?type=read')
+							$read->url('index.php?type=read')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$update = new \Kendo\Data\DataSourceTransportUpdate();
 
-							$update->url('indexGrid.php?type=update')
+							$update->url('index.php?type=update')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$destroy = new \Kendo\Data\DataSourceTransportDestroy();
 
-							$destroy->url('indexGrid.php?type=destroy')
+							$destroy->url('index.php?type=destroy')
 								 ->contentType('application/json')
 								 ->type('POST');
 
