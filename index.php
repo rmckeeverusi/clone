@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html> 
-	<head> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta http-equiv="Content-Script-Type" content="text/javascript; charset=utf-8">
 			
@@ -108,25 +109,25 @@
 
 							$create = new \Kendo\Data\DataSourceTransportCreate();
 
-							$create->url('index.php?type=create')
+							$create->url('indexGrid.php?type=create')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$read = new \Kendo\Data\DataSourceTransportRead();
 
-							$read->url('index.php?type=read')
+							$read->url('indexGrid.php?type=read')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$update = new \Kendo\Data\DataSourceTransportUpdate();
 
-							$update->url('index.php?type=update')
+							$update->url('indexGrid.php?type=update')
 								 ->contentType('application/json')
 								 ->type('POST');
 
 							$destroy = new \Kendo\Data\DataSourceTransportDestroy();
 
-							$destroy->url('index.php?type=destroy')
+							$destroy->url('indexGrid.php?type=destroy')
 								 ->contentType('application/json')
 								 ->type('POST');
 
